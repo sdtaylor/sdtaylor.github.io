@@ -1,3 +1,1 @@
-slowly moving over from my wordpress site
-
-slowly
+a work in progress
