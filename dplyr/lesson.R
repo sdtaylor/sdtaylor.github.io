@@ -45,9 +45,14 @@ filter(shrubs, site=='urban')
 #Create a new variable
 mutate(shrubs, area=width*length)
 
+#Use the assignment operator to make new dataframes from these
+shrubs_area <- mutate(shrubs, area=width*length)
+
+#Multiple new variables can be created
+shrubs_area <- mutate(shrubs, area=width*length, radius=width/2)
+
 #Quick exercise
 #Make a dataframe of shrubs from experiment A
-
 
 #########################################
 #Pipes
@@ -55,15 +60,15 @@ mutate(shrubs, area=width*length)
 #The prior two functions take the dataframe as an input, and give
 #a modified dataframe as output.
 
-shrub_area <- mutate(shrubs, area=width*length)
-site_shrub_area <- select(shrub_area, site, area)
+shrubs_area <- mutate(shrubs, area=width*length)
+shrubs_A <- filter(shrubs_area, site=='A')
 
 shrubs %>% mutate(area=width*length)
 
 
 shrubs %>% 
     mutate(area=width*length) %>%
-    select(site, area)
+    filter(site=='A')
 
 
 #Execise
@@ -86,7 +91,6 @@ shrubs %>%
 
 #Exercise
 # Calculate the mean and standard deviation of height and volume for each experiment group. 
-
 
 
 ######################
