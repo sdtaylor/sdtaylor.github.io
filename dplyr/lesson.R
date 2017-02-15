@@ -52,7 +52,7 @@ shrubs_area <- mutate(shrubs, area=width*length)
 shrubs_area <- mutate(shrubs, area=width*length, radius=width/2)
 
 #Quick exercise
-#Make a dataframe of shrubs from experiment A
+#Make a dataframe of shrubs from experiment A and include the area
 
 #########################################
 #Pipes
@@ -61,7 +61,7 @@ shrubs_area <- mutate(shrubs, area=width*length, radius=width/2)
 #a modified dataframe as output.
 
 shrubs_area <- mutate(shrubs, area=width*length)
-shrubs_A <- filter(shrubs_area, site=='A')
+shrubs_A <- filter(shrubs_area, experiment=='A')
 
 shrubs %>% mutate(area=width*length)
 
