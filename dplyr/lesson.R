@@ -25,7 +25,7 @@ matts_info = info[2,]
 
 #########################
 #Load the shrub dataset
-download.file('sdtaylor.github.io/dplyr/shrub_data.csv')
+download.file('sdtaylor.github.io/dplyr/shrub_data.csv', 'shrub_data.csv')
 shrubs = read.csv('shrub_data.csv')
 
 shrubs
@@ -94,7 +94,8 @@ shrubs %>%
 #####################
 #The portal dataset is from 25 years of monthly rodent trapping on 24 different plots.
 #Each row is a single rodent with information on date, plot number, species, sex, and other characteristics
-rodents<-read.csv("~/dplyr/PortalMammals_main.csv")
+download.file('sdtaylor.github.io/dplyr/PortalMammals_main.csv', 'PortalMammals_main.csv')
+rodents<-read.csv("PortalMammals_main.csv")
 
 #1st a few more tools using summarise()
 
