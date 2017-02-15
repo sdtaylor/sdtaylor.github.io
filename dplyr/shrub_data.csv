@@ -1,0 +1,13 @@
+site,experiment,length,width,height
+ridge,A,2.2,1.3,9.6
+ridge,B,2.1,2.2,7.6
+ridge,C,2.7,1.5,2.2
+meadow,A,3.0,4.5,1.5
+meadow,B,3.1,3.1,4.0
+meadow,C,2.5,2.8,3.0
+forest,A,1.9,1.8,4.5
+forest,B,1.1,0.5,2.3
+forest,C,3.5,2.0,7.5
+urban,A,2.9,2.7,3.2
+urban,B,4.5,4.8,6.5
+urban,C,1.2,1.8,2.7
