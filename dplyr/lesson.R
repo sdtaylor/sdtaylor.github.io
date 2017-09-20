@@ -16,6 +16,10 @@ ages <- c(28,34,12,22)
 info <- data.frame(all_names = c('shawn', 'matt','amanda'),
                    ages = c(29,23,12))
 
+#dataframes are designed so that each row is an observation,
+#and each column is an attribute about that observation
+
+
 #Access individual columns by [] or $
 ages <- info$ages
 names <- info[,'names']
@@ -33,6 +37,8 @@ shrubs
 #########################
 #What is dplyr? 
 #A package that manipulates data frames using verbs
+#All these functions accept a dataframe as the first argument
+#and return a dataframe as the result
 
 #Select a single or multiple columns.
 select(shrubs, experiment)
@@ -44,6 +50,9 @@ filter(shrubs, site=='urban')
 
 #Create a new variable
 mutate(shrubs, area=width*length)
+
+#The above command outputs the result to the screen but doesn't save it
+#What if I want to save this result for later?
 
 #Use the assignment operator to make new dataframes from these
 shrubs_area <- mutate(shrubs, area=width*length)
