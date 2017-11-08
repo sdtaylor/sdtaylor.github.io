@@ -13,7 +13,7 @@
 library(tidyr)
 library(dplyr)
 #Read in animals dataset
-animals=read.csv('http://sdtaylor.github.io/dplyr/animals.csv', stringsAsFactors = FALSE)
+animals <- read.csv('http://sdtaylor.github.io/dplyr/animals.csv', stringsAsFactors = FALSE)
 
 animals
 #Whats wrong with it? Which rules does it break?
@@ -39,7 +39,7 @@ animals <- animals %>%
   mutate(juvenile = ifelse(is.na(juvenile), 'N', 'Y'))
 
 #The shrub dataset
-shrubs=read.csv('http://sdtaylor.github.io/dplyr/shrubs.csv')
+shrubs <- read.csv('http://sdtaylor.github.io/dplyr/shrubs.csv')
 
 
 #In a decent format, but to do our analysis we need each measurement in it's own column
