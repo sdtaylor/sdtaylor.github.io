@@ -4,7 +4,7 @@
             "coursePrefix": "EDF",
             "courseNum": "6403",
             "fee": "",
-            "section": "72B5",
+            "section": "DEPT",
             "credits": "6",
             "days": "T R",
             "times": "3-5",
@@ -19,8 +19,8 @@
             "coursePrefixNum": "EDF6403",
             "specialTopic": "No",
             "subCategory": "Quantitative Analysis",
-            "frequency": "Every Semester",
-            "lastSeen": "Every Semester"
+            "frequency": "Most Years",
+            "lastSeen": "Spring 2018,Fall 2017,Summer 2017,Spring 2017,Fall 2016,Summer 2016,Spring 2016,Fall 2015,Summer 2015,Spring 2015,Fall 2014,Summer 2014,Spring 2014,Fall 2013,Spring 2013,Fall 2012,Spring 2012,Fall 2011,Spring 2011,Fall 2010"
         },
         {
             "coursePrefix": "EME",
@@ -33,7 +33,7 @@
             "building": "WEB",
             "room": "",
             "title": "PRACT IN EDUC MEDIA",
-            "prof": "STAFF;",
+            "prof": "Kumar,Swapna;",
             "days2": "",
             "times2": "",
             "building2": "",
@@ -63,96 +63,8 @@
             "coursePrefixNum": "ENV6905",
             "specialTopic": "No",
             "subCategory": "",
-            "frequency": "Every Semester",
-            "lastSeen": "Every Semester"
-        },
-        {
-            "coursePrefix": "ENV",
-            "courseNum": "6932",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "POLLU PREVENT/CONTROL",
-            "prof": "Deliz Quinonez,Katherine Y;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "ENV6932",
-            "specialTopic": "Yes",
-            "subCategory": "",
-            "frequency": "1st Time Offered",
-            "lastSeen": ""
-        },
-        {
-            "coursePrefix": "ENV",
-            "courseNum": "6932",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "POLLU PREVENT/CONTROL",
-            "prof": "Deliz Quinonez,Katherine Y;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "ENV6932",
-            "specialTopic": "Yes",
-            "subCategory": "",
-            "frequency": "1st Time Offered",
-            "lastSeen": ""
-        },
-        {
-            "coursePrefix": "ENV",
-            "courseNum": "6932",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "AQUATIC HETEROTROPHS",
-            "prof": "Deliz Quinonez,Katherine Y;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "ENV6932",
-            "specialTopic": "Yes",
-            "subCategory": "",
-            "frequency": "1st Time Offered",
-            "lastSeen": ""
-        },
-        {
-            "coursePrefix": "ENV",
-            "courseNum": "6932",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "AQUATIC HETEROTROPHS",
-            "prof": "Deliz Quinonez,Katherine Y;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "ENV6932",
-            "specialTopic": "Yes",
-            "subCategory": "",
-            "frequency": "1st Time Offered",
-            "lastSeen": ""
+            "frequency": "Most Years",
+            "lastSeen": "Spring 2018,Fall 2017,Summer 2017,Spring 2017,Fall 2016,Summer 2016,Spring 2016,Fall 2015,Summer 2015,Spring 2015,Fall 2014,Summer 2014,Spring 2014,Fall 2013,Spring 2013,Fall 2012,Spring 2012,Fall 2011,Spring 2011,Fall 2010"
         },
         {
             "coursePrefix": "FAS",
@@ -173,7 +85,7 @@
             "coursePrefixNum": "FAS5276C",
             "specialTopic": "No",
             "subCategory": "Ecology",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
         },
         {
@@ -195,7 +107,7 @@
             "coursePrefixNum": "FAS6932",
             "specialTopic": "Yes",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
         },
         {
@@ -217,7 +129,7 @@
             "coursePrefixNum": "FAS6932",
             "specialTopic": "Yes",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
         },
         {
@@ -261,140 +173,8 @@
             "coursePrefixNum": "FAS6932",
             "specialTopic": "Yes",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
-        },
-        {
-            "coursePrefix": "FAS",
-            "courseNum": "5255C",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "DISEAS WARMWATER FISH",
-            "prof": "Francis-Floyd,Ruth;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "FAS5255C",
-            "specialTopic": "No",
-            "subCategory": "",
-            "frequency": "Most Years",
-            "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
-        },
-        {
-            "coursePrefix": "FAS",
-            "courseNum": "5255C",
-            "fee": "",
-            "section": "73D4",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "DISEAS WARMWATER FISH",
-            "prof": "Francis-Floyd,Ruth;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "FAS5255C",
-            "specialTopic": "No",
-            "subCategory": "",
-            "frequency": "Most Years",
-            "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
-        },
-        {
-            "coursePrefix": "FAS",
-            "courseNum": "5255C",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "DISEAS WARMWATER FISH",
-            "prof": "Francis-Floyd,Ruth;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "FAS5255C",
-            "specialTopic": "No",
-            "subCategory": "",
-            "frequency": "Most Years",
-            "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
-        },
-        {
-            "coursePrefix": "FAS",
-            "courseNum": "5255C",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "DISEAS WARMWATER FISH",
-            "prof": "Francis-Floyd,Ruth;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "FAS5255C",
-            "specialTopic": "No",
-            "subCategory": "",
-            "frequency": "Most Years",
-            "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
-        },
-        {
-            "coursePrefix": "FOR",
-            "courseNum": "6905",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "2",
-            "days": "TBA",
-            "times": "",
-            "building": "",
-            "room": "",
-            "title": "UFBELIZE/CONFIELDMETH",
-            "prof": "Andreu,Michael G;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "FOR6905",
-            "specialTopic": "No",
-            "subCategory": "",
-            "frequency": "Most Years",
-            "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Spring 2014,Spring 2013"
-        },
-        {
-            "coursePrefix": "FOR",
-            "courseNum": "6905",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "TBA",
-            "times": "",
-            "building": "",
-            "room": "",
-            "title": "UFBELIZE/ECOFIELDMETH",
-            "prof": "Andreu,Michael G;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "FOR6905",
-            "specialTopic": "No",
-            "subCategory": "",
-            "frequency": "Most Years",
-            "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Spring 2014,Spring 2013"
         },
         {
             "coursePrefix": "FOR",
@@ -437,7 +217,7 @@
             "coursePrefixNum": "FOR5435",
             "specialTopic": "No",
             "subCategory": "Quantitative Analysis",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
         },
         {
@@ -459,7 +239,7 @@
             "coursePrefixNum": "FOR5435",
             "specialTopic": "No",
             "subCategory": "Quantitative Analysis",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
         },
         {
@@ -481,7 +261,7 @@
             "coursePrefixNum": "FOR5435",
             "specialTopic": "No",
             "subCategory": "Quantitative Analysis",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
         },
         {
@@ -569,7 +349,7 @@
             "coursePrefixNum": "FOR6934",
             "specialTopic": "Yes",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2016,Summer 2015,Spring 2012,Spring 2011"
         },
         {
@@ -591,7 +371,7 @@
             "coursePrefixNum": "FOR6934",
             "specialTopic": "Yes",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2016,Summer 2015,Spring 2012,Spring 2011"
         },
         {
@@ -613,7 +393,7 @@
             "coursePrefixNum": "FOR6934",
             "specialTopic": "Yes",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2016,Summer 2015,Spring 2012,Spring 2011"
         },
         {
@@ -622,9 +402,9 @@
             "fee": "",
             "section": "DEPT",
             "credits": "3",
-            "days": "TBA",
+            "days": "",
             "times": "",
-            "building": "",
+            "building": "WEB",
             "room": "",
             "title": "AGROFORESTRY IN SE US",
             "prof": "Bannister,Michael E;",
@@ -635,7 +415,7 @@
             "coursePrefixNum": "FOR6934",
             "specialTopic": "Yes",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2016,Summer 2015,Spring 2012,Spring 2011"
         },
         {
@@ -657,8 +437,8 @@
             "coursePrefixNum": "GEO6905",
             "specialTopic": "No",
             "subCategory": "",
-            "frequency": "Every Semester",
-            "lastSeen": "Every Semester"
+            "frequency": "Most Years",
+            "lastSeen": "Spring 2018,Fall 2017,Summer 2017,Spring 2017,Fall 2016,Summer 2016,Spring 2016,Fall 2015,Summer 2015,Spring 2015,Fall 2014,Summer 2014,Spring 2014,Fall 2013,Spring 2013,Fall 2012,Spring 2012,Fall 2011,Spring 2011,Fall 2010"
         },
         {
             "coursePrefix": "GEO",
@@ -723,8 +503,8 @@
             "coursePrefixNum": "GEO6905",
             "specialTopic": "No",
             "subCategory": "",
-            "frequency": "Every Semester",
-            "lastSeen": "Every Semester"
+            "frequency": "Most Years",
+            "lastSeen": "Spring 2018,Fall 2017,Summer 2017,Spring 2017,Fall 2016,Summer 2016,Spring 2016,Fall 2015,Summer 2015,Spring 2015,Fall 2014,Summer 2014,Spring 2014,Fall 2013,Spring 2013,Fall 2012,Spring 2012,Fall 2011,Spring 2011,Fall 2010"
         },
         {
             "coursePrefix": "GEO",
@@ -767,8 +547,8 @@
             "coursePrefixNum": "GEO6905",
             "specialTopic": "No",
             "subCategory": "",
-            "frequency": "Every Semester",
-            "lastSeen": "Every Semester"
+            "frequency": "Most Years",
+            "lastSeen": "Spring 2018,Fall 2017,Summer 2017,Spring 2017,Fall 2016,Summer 2016,Spring 2016,Fall 2015,Summer 2015,Spring 2015,Fall 2014,Summer 2014,Spring 2014,Fall 2013,Spring 2013,Fall 2012,Spring 2012,Fall 2011,Spring 2011,Fall 2010"
         },
         {
             "coursePrefix": "GEO",
@@ -833,8 +613,8 @@
             "coursePrefixNum": "STA5325",
             "specialTopic": "No",
             "subCategory": "Quantitative Analysis",
-            "frequency": "Every Semester",
-            "lastSeen": "Every Semester"
+            "frequency": "Most Years",
+            "lastSeen": "Spring 2018,Fall 2017,Summer 2017,Spring 2017,Fall 2016,Summer 2016,Spring 2016,Fall 2015,Summer 2015,Spring 2015,Fall 2014,Summer 2014,Spring 2014,Fall 2013,Spring 2013,Fall 2012,Spring 2012,Fall 2011,Spring 2011,Fall 2010"
         },
         {
             "coursePrefix": "STA",
@@ -855,8 +635,8 @@
             "coursePrefixNum": "STA6166",
             "specialTopic": "No",
             "subCategory": "Quantitative Analysis",
-            "frequency": "Every Semester",
-            "lastSeen": "Every Semester"
+            "frequency": "Most Years",
+            "lastSeen": "Spring 2018,Fall 2017,Summer 2017,Spring 2017,Fall 2016,Summer 2016,Spring 2016,Fall 2015,Summer 2015,Spring 2015,Fall 2014,Summer 2014,Spring 2014,Fall 2013,Spring 2013,Fall 2012,Spring 2012,Fall 2011,Spring 2011,Fall 2010"
         },
         {
             "coursePrefix": "STA",
@@ -943,7 +723,7 @@
             "coursePrefixNum": "WIS6905",
             "specialTopic": "No",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
         },
         {
@@ -965,7 +745,7 @@
             "coursePrefixNum": "WIS6905",
             "specialTopic": "No",
             "subCategory": "",
-            "frequency": "Most Years",
+            "frequency": "Infrequent",
             "lastSeen": "Summer 2017,Summer 2016,Summer 2015,Summer 2014"
         },
         {
@@ -1007,50 +787,6 @@
             "building2": "",
             "room2": "",
             "coursePrefixNum": "WIS6425",
-            "specialTopic": "No",
-            "subCategory": "",
-            "frequency": "1st Time Offered",
-            "lastSeen": ""
-        },
-        {
-            "coursePrefix": "WIS",
-            "courseNum": "6556",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "TBA",
-            "times": "",
-            "building": "",
-            "room": "",
-            "title": "TRADE WILD RESOURCE",
-            "prof": "STAFF;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "WIS6556",
-            "specialTopic": "No",
-            "subCategory": "",
-            "frequency": "1st Time Offered",
-            "lastSeen": ""
-        },
-        {
-            "coursePrefix": "WIS",
-            "courseNum": "6556",
-            "fee": "",
-            "section": "DEPT",
-            "credits": "3",
-            "days": "",
-            "times": "",
-            "building": "WEB",
-            "room": "",
-            "title": "TRADE WILD RESOURCE",
-            "prof": "STAFF;",
-            "days2": "",
-            "times2": "",
-            "building2": "",
-            "room2": "",
-            "coursePrefixNum": "WIS6556",
             "specialTopic": "No",
             "subCategory": "",
             "frequency": "1st Time Offered",
@@ -1163,8 +899,8 @@
             "coursePrefixNum": "WIS6905",
             "specialTopic": "No",
             "subCategory": "",
-            "frequency": "Every Semester",
-            "lastSeen": "Every Semester"
+            "frequency": "Most Years",
+            "lastSeen": "Spring 2018,Fall 2017,Summer 2017,Spring 2017,Fall 2016,Summer 2016,Spring 2016,Fall 2015,Summer 2015,Spring 2015,Fall 2014,Summer 2014,Spring 2014,Fall 2013,Spring 2013,Fall 2012,Spring 2012,Fall 2011,Spring 2011,Fall 2010"
         }
     ]
 }
