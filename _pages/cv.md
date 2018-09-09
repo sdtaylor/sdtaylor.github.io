@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Download as PDF](https://github.com/sdtaylor/CV/raw/master/Shawn_Taylor_CV.pdf)
+
 ## Education
 
 **PhD** in Ecology. 2015-Present. University of Florida, Gainesville, FL <> [White Lab](https://www.weecology.org)  
