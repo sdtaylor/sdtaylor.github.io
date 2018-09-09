@@ -9,18 +9,17 @@ redirect_from:
 
 {% include base_path %}
 
-\
 ## Education
 
-**PhD** in Ecology | 2015-Present | University of Florida | Gainesville, FL | [White Lab](https://www.weecology.org)  
+**PhD** in Ecology. 2015-Present. University of Florida, Gainesville, FL <> [White Lab](https://www.weecology.org)  
 Research: Forecasting in ecology  
 - Making near term phenology forecasts. [http://phenology.naturecast.org](http://phenology.naturecast.org)  
 - What tools can be borrowed from the meteorology and climate forecasting community?  
 
-**BS** in Ecology and Conservation Biology | 2012 | University of Idaho | Moscow, ID  
+**BS** in Ecology and Conservation Biology. 2012. University of Idaho, Moscow, ID  
  - Senior Thesis: Influences of soil and spatial properties on Bromus tectorum distribution after fire  
 
-**AS** in Computer Networking | 2005 | Truckee Meadows Community College | Reno, NV
+**AS** in Computer Networking. 2005. Truckee Meadows Community College, Reno, NV
 
 ## Publications  
 
