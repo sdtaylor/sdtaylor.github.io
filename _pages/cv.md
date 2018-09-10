@@ -60,8 +60,6 @@ May - October 2012, April 2013 - November 2014
 2006-2009  
  - Design, testing, & installation of storage area networks (SANs) for film and television post production.  
 
-\newpage
-
 ## Certifications & Trainings
 
 **Near Term Ecological Forecasting Workshop** Boston, Massachusetts - (7/2018)
