@@ -3,6 +3,9 @@ main:
   - title: "About Me"
     url: /
     
+  - title: "Portfolio"
+    url: /portfolio/
+
   - title: "Publications"
     url: /publications/
 
@@ -11,9 +14,6 @@ main:
 
 #  - title: "Teaching"
 #    url: /teaching/    
-    
-#  - title: "Portfolio"
-#    url: /portfolio/
         
 #  - title: "Blog Posts"
 #    url: /year-archive/
