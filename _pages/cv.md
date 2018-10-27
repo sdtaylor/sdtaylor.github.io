@@ -39,6 +39,8 @@ Research: Forecasting in ecology
 
 ## Posters & Presentations  
 
+- Taylor, S.D. and White, E.P. 2018. Evaluation of a near term plant phenology forecast. Phenology Conference 2018. Melbourne, VIC, Australia. **Best Student Poser**
+
 - Taylor, S.D. and White, E.P. 2018. Evaluation of a near term plant phenology forecast. F1000Research, 7:1274 (poster) ([https://doi.org/10.7490/f1000research.1115951.1](https://doi.org/10.7490/f1000research.1115951.1))
 
 - Taylor, S.D. and White, E.P. 2016. Ecological Forecasting and Scale. Gordon Research Conference: Unifying Ecology Across Scales. University of New England. Biddeford, ME. (Poster)
