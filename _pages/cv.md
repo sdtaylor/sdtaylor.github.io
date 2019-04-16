@@ -27,7 +27,7 @@ Research: Forecasting in ecology
 
 [Google Scholar](https://scholar.google.com/citations?user=SvjLzQMAAAAJ&hl=en)
 
-Taylor, S.D., J.M. Meiners, K. Riemer, M.C. Orr, E.P White. 2018. Comparison of large-scale citizen science data and long-term study data for phenology modeling. Ecology [https://doi.org/10.1002/ecy.2568](https://doi.org/10.1002/ecy.2568).[[Preprint]( https://doi.org/10.1101/335802),[Code](https://github.com/sdtaylor/phenology_dataset_study)]
+Taylor, S.D., J.M. Meiners, K. Riemer, M.C. Orr, E.P White. 2019. Comparison of large-scale citizen science data and long-term study data for phenology modeling. Ecology [https://doi.org/10.1002/ecy.2568](https://doi.org/10.1002/ecy.2568).[[Preprint]( https://doi.org/10.1101/335802),[Code](https://github.com/sdtaylor/phenology_dataset_study)]
 
 Harris, D.J., S.D. Taylor, E.P. White. 2018. Forecasting biodiversity in breeding birds using best practices. PeerJ, 6:e4278 [https://doi.org/10.7717/peerj.4278](https://doi.org/10.7717/peerj.4278) [
 [Code](https://github.com/weecology/bbs-forecasting/),
@@ -41,11 +41,15 @@ White, E.P., G.M. Yenni, S.D. Taylor, E.M. Christensen, E.K. Bledsoe, J.L. Simon
 
 ## Preprints
 
+Taylor, SD. 2019. Estimating transition dates from status-based phenology observations: a test of methods. PeerJ Preprints 7:e27629v1 [https://doi.org/10.7287/peerj.preprints.27629v1](https://doi.org/10.7287/peerj.preprints.27629v1)  
+
 Taylor, SD. 2018. “NEON NIST Data Science Evaluation Challenge: Methods and Results of Team Shawn.” PeerJ Preprints 6: e26967v1. [https://doi.org/10.7287/peerj.preprints.26967](https://doi.org/10.7287/peerj.preprints.26967).
 
 ## Software
 
-Taylor, S.D. 2018. pyPhenology: A python framework for plant phenology modelling. The Journal of Open Source Software 3: 827. [https://doi.org/10.21105/joss.00827](https://doi.org/10.21105/joss.00827)
+Christensen, E.M., Yenni, G.M., Ye, H., Simonis, J.L., Bledsoe, E.K., Diaz, R., Taylor, S.D., White, E.P. and Ernest, S.M. 2019. portalr: An R Package for Summarizing and Using the Portal Project Data. Journal of Open Source Software 4 (33): 1098. [https://doi.org/10.21105/joss.01098](https://doi.org/10.21105/joss.01098)   
+
+Taylor, S.D. 2018. pyPhenology: A python framework for plant phenology modelling. The Journal of Open Source Software 3: 827. [https://doi.org/10.21105/joss.00827](https://doi.org/10.21105/joss.00827)  
 
 McGlinn, D., H. Senyondo, S.D. Taylor, M. Pohlman, and E.P. White. 2015-present. rdataretriever: R Interface to the Data Retriever. https://cran.r-project.org/web/packages/rdataretriever/index.html
 
@@ -58,6 +62,16 @@ Taylor, S.D. and White, E.P. 2018. Evaluation of a near term plant phenology for
 Taylor, S.D. and White, E.P. 2016. Ecological Forecasting and Scale. Gordon Research Conference: Unifying Ecology Across Scales. University of New England. Biddeford, ME. (Poster)
 
 Taylor, S.D. and Newingham, B.A. 2012. Influences of soil and spatial properties on Bromus tectorum distribution after fire. Annual Meeting of the Society of Range Management, Spokane, WA. (Presentation)
+
+## Invited Talks
+Ecological Forecasting: Concepts, Recommendations, and Examples. LTER Metacommunities Working Group. Boulder, CO. Nov. 5, 2018. Organizer: Eric R. Sokol  
+
+## Workshops Tought
+7 Week Data carpentry workshop Jan. 1 - March 8 [Blog Post](https://datacarpentry.org/blog/2018/04/dc-seven-weeks)  
+Data Carpentry, Utah State University, September 29-30, 2017  
+Software Carpentry, University of Florida, May 25-26, 2017  
+Data Carpentry, University of Florida, October 17-18, 2016  
+Software Carpentry, University of Florida, August 17-18, 2016 
 
 ## Work Experience
 **Lab Manager** | Agricultural Research Station | Dr. Beth Newingham | Reno, NV  
