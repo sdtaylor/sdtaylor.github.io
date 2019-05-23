@@ -41,6 +41,8 @@ White, E.P., G.M. Yenni, S.D. Taylor, E.M. Christensen, E.K. Bledsoe, J.L. Simon
 
 ## Preprints
 
+Taylor, SD and White, EP, 2019. Automated data-intensive forecasting of plant phenology throughout the United States. bioRxiv, p.634568. [https://doi.org/10.1101/634568](https://doi.org/10.1101/634568)  
+
 Taylor, SD. 2019. Estimating transition dates from status-based phenology observations: a test of methods. PeerJ Preprints 7:e27629v1 [https://doi.org/10.7287/peerj.preprints.27629v1](https://doi.org/10.7287/peerj.preprints.27629v1)  
 
 Taylor, SD. 2018. “NEON NIST Data Science Evaluation Challenge: Methods and Results of Team Shawn.” PeerJ Preprints 6: e26967v1. [https://doi.org/10.7287/peerj.preprints.26967](https://doi.org/10.7287/peerj.preprints.26967).
