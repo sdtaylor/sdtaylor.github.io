@@ -1,0 +1,414 @@
+---
+title: "Multiple Figures in ggplot2"
+author: "Shawn T"
+date: "5/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Packages
+This guide used the following packages: `tidyverse`,`portalr`,`cowplot`,`patchwork`.
+Install them with the line. 
+
+`install.packages(c('tidyverse','portalr','cowplot','patchwork'))`
+
+## Data Setup
+
+This guide uses rodent abundances from the Portal Project obtained via the portalr packages.
+
+Load the package and download the latest data version.
+
+```{r download_data, echo=FALSE}
+library(tidyverse)
+library(portalr)
+portalr::download_observations()
+```
+
+This will load a dataframe of abundances at different dates for various mice species
+
+```{r, echo=FALSE}
+mice = portalr::abundance(path='./data', time='date') %>%
+  rename(date=censusdate) %>%
+  mutate(date = as.Date(date))
+```
+
+The `mice` dataframe has a single column for the date of a trapping session and a column for each species with abundances. Species here are two letter codes. 
+
+```{r}
+head(mice)
+```
+
+
+
+## Option 1: Use facets whenever possible.
+
+Sometimes the structure of data makes it so putting together multiple figures is difficult. For example to have a timeseries for a single abundance is straightforward
+
+
+```{r}
+ggplot(mice, aes(x=date, y=PP)) + 
+  geom_line()
+```
+
+But to do this for each species would require making a figure for each and combining them. Since each figure is **the same layout but different data** this is a good opporutnity for using facets. The data must first be taken to a long layout though. Here this introduces 2 new columns, `species` and `abundance`, and pivots all the values into them. Note the `-date` argument showing that column should not be pivoted.
+
+```{r}
+mice_long_format = mice %>%
+  pivot_longer(-date, names_to = 'species', values_to = 'abundance')
+```
+
+Now a figure can be specifed using facet to automatically arrange numerous plots
+
+```{r}
+ggplot(mice_long_format, aes(x=date, y=abundance)) + 
+  geom_line() +
+  facet_wrap(~species)
+```
+
+
+The scale of figures here is a common problem and can be fixed with the `scales` option. Having just a few key species used can be done by filtering the input data.
+
+```{r}
+ggplot(filter(mice_long_format, species %in% c('PP','RM','DO')), aes(x=date, y=abundance)) + 
+  geom_line() +
+  facet_wrap(~species, scales='free')
+```
+
+And stacked vs side by side figures are controlled by `ncol` and `nrow` arguments. 
+
+```{r}
+ggplot(filter(mice_long_format, species %in% c('PP','RM','DO')), aes(x=date, y=abundance)) + 
+  geom_line() +
+  facet_wrap(~species, scales='free', ncol=1)
+```
+
+#### A good Rule of thumb
+**If the x and y axis, and the geom_ of all your figures are the same, it should be doable in facet**
+
+
+## Option 2: The patchwork library
+
+What about figures with different axis or geoms? Then it's time to move beyond facets. 
+
+(patchwork)[https://patchwork.data-imaginist.com/index.html] is a newer library written for mutli-figure layouts and designed to work with ggplot. It has the simplest interface for putting together multiple figures.
+
+Consider a timeseries of abundances as well as a histogram for one of the mice species.
+
+```{r}
+ggplot(mice, aes(x=PP)) + 
+  geom_histogram(binwidth = 5)
+
+ggplot(mice, aes(x=date, y=PP)) + 
+  geom_line()
+
+```
+
+The first step is saving each plot as a variable. Then with patchwork different ggplot variables can be "added" together.
+
+```{r}
+library(patchwork)
+pp_histogram = ggplot(mice, aes(x=PP)) + 
+  geom_histogram(binwidth = 5)
+
+pp_timeseries = ggplot(mice, aes(x=date, y=PP)) + 
+  geom_line()
+
+pp_histogram + pp_timeseries
+```
+
+The layout can be controlled with `patchwork::plot_layout()`
+
+```{r}
+pp_histogram + pp_timeseries + plot_layout(ncol=1)
+```
+
+Any amount plots can be added together. The ordering goes from left->right and top->bottom.  For example lets add the histogram and timeseries of another species.
+
+```{r}
+
+do_histogram = ggplot(mice, aes(x=DO)) + 
+  geom_histogram(binwidth = 5)
+
+do_timeseries = ggplot(mice, aes(x=date, y=DO)) + 
+  geom_line()
+
+pp_histogram + pp_timeseries + do_histogram + do_timeseries
+
+
+```
+
+I would like the histograms on top, so the ordering must be like this. Put them on different lines for better organization. Specifying the number of columns here is not necessary, but makes for a better refence of what I'd like  the plot to look like. 
+
+```{r}
+
+pp_histogram + do_histogram + 
+  pp_timeseries  + do_timeseries +
+  plot_layout(ncol=2, nrow=2)
+```
+
+
+What about an odd number of plots? For example here I want to include the histogram of *all* mice abundances for comparison. I'd like the new all_species on on top. 
+
+```{r}
+all_species_histogram = ggplot(mice_long_format, aes(x=abundance)) + 
+  geom_histogram(binwidth = 5)
+
+all_species_histogram + 
+pp_histogram + do_histogram + 
+  pp_timeseries  + do_timeseries 
+```
+
+There are two ways to do this in patchwork. First is use a spacer to fill in a spot on the top row with `patchwork::plot_spacer()`.
+
+```{r}
+
+all_species_histogram + plot_spacer() + 
+pp_histogram + do_histogram + 
+  pp_timeseries  + do_timeseries +
+  plot_layout(ncol=2)
+```
+
+Another option is to use the notation `/` and `|`. `/` explictely puts two plots on top of eachother, while `|` explictely puts them side by side. You can also use `()` to define different groupings. Note the `|` is the usually above the enter key on a keyboard. Read more about these layout options [here](https://patchwork.data-imaginist.com/articles/guides/assembly.html).
+
+```{r}
+
+all_species_histogram /
+  (pp_histogram | do_histogram) /
+  (pp_timeseries | do_timeseries)
+```
+
+Note that this will stretch the top plot to the appropriate width. The spacer is still needed to make all plots the same size.
+
+```{r}
+
+(all_species_histogram | plot_spacer()) /
+  (pp_histogram | do_histogram) /
+  (pp_timeseries | do_timeseries)
+```
+
+### Working with labels
+
+Working with labels of multiple plots can be tricky. Since some axis line up it makes sense to only have some labels once. The best option I've found is labelling each plot by hand depending on it's position. For example y axis here is always abundance so that needs to be labelled just once for each row. The bottom 2 rows could use a single identifier for the species, so that can be labelled in the histogram figure.
+
+```{r}
+
+do_histogram = ggplot(mice, aes(x=DO)) + 
+  geom_histogram(binwidth = 5) +
+  labs(x='',y='', subtitle = 'Species: DO')
+
+do_timeseries = ggplot(mice, aes(x=date, y=DO)) + 
+  geom_line() +
+  labs(x='Date',y='')
+
+pp_histogram = ggplot(mice, aes(x=PP)) + 
+  geom_histogram(binwidth = 5) +
+  labs(x='',y='Abundance', subtitle = 'Species: PP')
+
+pp_timeseries = ggplot(mice, aes(x=date, y=PP)) + 
+  geom_line() +
+  labs(x='Date',y='Abundance')
+
+all_species_histogram = ggplot(mice_long_format, aes(x=abundance)) + 
+  geom_histogram(binwidth = 5) +
+  labs(x='',y='Abundance', subtitle = 'All species abundance')
+
+(all_species_histogram | plot_spacer()) /
+  (pp_histogram | do_histogram) /
+  (pp_timeseries | do_timeseries)
+
+```
+
+
+
+Annoting different subplots is very easy with patchwork.
+
+```{r}
+
+all_species_histogram + patchwork::plot_spacer() +  
+  pp_histogram + do_histogram + 
+  pp_timeseries + do_timeseries + 
+  patchwork::plot_layout(ncol=2) +
+  plot_annotation(tag_levels = 'A')
+
+```
+
+
+
+## Option 3: cowplot
+
+Cowplot has been around for a lot longer than patchwork. It has some options which make combining plots a bit easier in some cases. It has different functions though. Here is the above plot with cowplot. Note  the use of `NULL` in place of `plot_spacer()`, and using a blank entry in the `labels` argument to account for that. 
+
+```{r}
+library(cowplot)
+
+plot_grid(all_species_histogram, NULL,
+          pp_histogram,  do_histogram,
+          pp_timeseries, do_timeseries,
+          ncol = 2, labels=c('A','','C','D','E','F'))
+
+```
+
+
+At the moment cowplot is better than patchwork for complex layouts. For example [this figure](https://www.biorxiv.org/content/biorxiv/early/2019/05/10/634568/F3.large.jpg) was done with cowplot. Here's a simple example showing that functionality. It uses `cowplot::ggdraw()` to setup a canvas for drawing multiple plots at precise locations. Note that the x,y coordinates in `draw_plot()` have 0,0 in the center of the plot.
+
+```{r}
+# First setup a plot object of the USA
+basemap = map_data('state')
+base_usa = ggplot() + 
+  geom_polygon(data = basemap, aes(x=long, y = lat, group = group), fill=NA, color='black', size=1.5) + 
+  coord_fixed(1.3)
+
+ggdraw(base_usa) + 
+  draw_plot(pp_histogram, x=-0.25, y=-0.18, scale=0.3) + 
+  draw_plot(do_histogram, x=0.25, y=0.18, scale=0.3)
+```
+
+And combining plots into a map? ie. both histograms and timeseries? As of this writing patchwork did not work seamlessly with cowplot, so combining needs to be done with subplots using `cowplot::plot_gird()`. Note that a usefull tool is a common theme here to adjust text sizes and such.
+
+```{r}
+
+subplot_theme = theme(
+  axis.text = element_text(size=6),
+  axis.title = element_text(size=8),
+  plot.subtitle = element_text(size=10)
+)
+
+do_histogram = ggplot(mice, aes(x=DO)) + 
+  geom_histogram(binwidth = 5) +
+  labs(x='',y='', subtitle = 'Species: DO') +
+  subplot_theme
+
+do_timeseries = ggplot(mice, aes(x=date, y=DO)) + 
+  geom_line() +
+  labs(x='Date',y='') +
+  subplot_theme
+
+pp_histogram = ggplot(mice, aes(x=PP)) + 
+  geom_histogram(binwidth = 5) +
+  labs(x='',y='', subtitle = 'Species: PP') +
+  subplot_theme
+
+pp_timeseries = ggplot(mice, aes(x=date, y=PP)) + 
+  geom_line() +
+  labs(x='Date',y='') +
+  subplot_theme
+
+pp_plot = plot_grid(pp_histogram,pp_timeseries,ncol = 1 )
+do_plot = plot_grid(do_histogram,do_timeseries, ncol = 1 )
+
+ggdraw(base_usa) + 
+  draw_plot(pp_plot, x=-0.25, y=-0.18, scale=0.35) + 
+  draw_plot(do_plot, x=0.25, y=0.18, scale=0.35)
+```
+
+
+## What about legends?
+
+A common problem is having the same legend with different plots. Consider the following to plots of species abundance across seasons.
+
+```{r}
+seasonal_abundance_avg = mice_long_format %>%
+  mutate(month = lubridate::month(date)) %>%
+  mutate(season = case_when(
+    month %in% c(1,2,3,10,11,12) ~ 'winter',
+    month %in% c(4,5,6,7,8,9) ~ 'summer'
+  )) %>%
+  group_by(species, season) %>%
+  summarise(avg_abundance = mean(abundance)) %>%
+  ungroup() %>%
+  filter(species %in% c('PP','DO','RM'))
+
+seasonal_abundance_timeseries = mice_long_format %>%
+  mutate(month = lubridate::month(date), year=lubridate::year(date)) %>%
+  mutate(season = case_when(
+    month %in% c(1,2,3,10,11,12) ~ 'winter',
+    month %in% c(4,5,6,7,8,9) ~ 'summer'
+  )) %>%
+  group_by(species, season, year) %>%
+  summarise(avg_abundance = mean(abundance)) %>%
+  ungroup() %>%
+  filter(species %in% c('PP','DO','RM'))
+
+ggplot(seasonal_abundance_avg, aes(x=season, y=avg_abundance, fill=season)) + 
+  geom_col() +
+  facet_wrap(~species)
+
+ggplot(seasonal_abundance_timeseries, aes(x=year, y=avg_abundance, color=season)) + 
+  geom_line() +
+  facet_wrap(~species)
+```
+
+They are different data so cannot be faceted. Patchwork will work for this by removing the legend from 1 plot.
+
+```{r}
+
+seasonal_barplot = ggplot(seasonal_abundance_avg, aes(x=season, y=avg_abundance, fill=season)) + 
+  geom_col() +
+  facet_wrap(~species)
+
+seasonal_timeseries = ggplot(seasonal_abundance_timeseries, aes(x=year, y=avg_abundance, color=season)) + 
+  geom_line() +
+  facet_wrap(~species) +
+  theme(legend.position = 'none')
+
+seasonal_timeseries + seasonal_barplot
+```
+
+But depending on the plot layout the figure position should be ajusted accordingly.
+
+```{r}
+
+seasonal_barplot = ggplot(seasonal_abundance_avg, aes(x=season, y=avg_abundance, fill=season)) + 
+  geom_col() +
+  facet_wrap(~species) +
+  theme(legend.position = 'bottom')
+
+seasonal_timeseries = ggplot(seasonal_abundance_timeseries, aes(x=year, y=avg_abundance, color=season)) + 
+  geom_line() +
+  facet_wrap(~species) +
+  theme(legend.position = 'none')
+
+seasonal_timeseries + seasonal_barplot + plot_layout(ncol=1)
+```
+
+Cowplot has a clever legend extraction function for this purpose. 
+
+
+```{r}
+seasonal_barplot = ggplot(seasonal_abundance_avg, aes(x=season, y=avg_abundance, fill=season)) + 
+  geom_col() +
+  facet_wrap(~species) 
+
+seasonal_timeseries = ggplot(seasonal_abundance_timeseries, aes(x=year, y=avg_abundance, color=season)) + 
+  geom_line() +
+  facet_wrap(~species)
+
+legend = get_legend(seasonal_barplot)
+
+plot_grid(legend, seasonal_timeseries, seasonal_barplot, ncol=1, rel_heights = c(0.2,1,1))
+```
+
+Note the cowplot legend extraction does not automatically remove the legends among figures. So that must be accounted for.
+
+```{r}
+
+# First create two plots with legends remove
+seasonal_barplot = ggplot(seasonal_abundance_avg, aes(x=season, y=avg_abundance, fill=season)) + 
+  geom_col() +
+  facet_wrap(~species) +
+  theme(legend.position = 'none')
+
+seasonal_timeseries = ggplot(seasonal_abundance_timeseries, aes(x=year, y=avg_abundance, color=season)) + 
+  geom_line() +
+  facet_wrap(~species) +
+  theme(legend.position = 'none')
+
+# Then generate a temporary instance of one of the plots with the legend re-inserted at the bottom postiion.
+legend = get_legend(seasonal_barplot + theme(legend.position = 'bottom'))
+
+plot_grid(legend, seasonal_timeseries, seasonal_barplot, ncol=1, rel_heights = c(0.2,1,1))
+```
+
