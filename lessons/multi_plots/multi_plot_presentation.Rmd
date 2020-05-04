@@ -30,7 +30,7 @@ portalr::download_observations()
 This will load a dataframe of abundances at different dates for various mice species
 
 ```{r, echo=FALSE}
-mice = portalr::abundance(path='./data', time='date') %>%
+mice = portalr::abundance(time='date') %>%
   rename(date=censusdate) %>%
   mutate(date = as.Date(date))
 ```
