@@ -10,6 +10,10 @@ You can also find everything on my [Google Scholar profile](https://scholar.goog
 
 ## Publications  
 
+Taylor, Shawn D., and Dawn M. Browning. 2021. Multi-Scale Assessment of a Grassland Productivity Model. Biogeosciences 18 (6): 2213–20. [https://doi.org/10.5194/bg-18-2213-2021](https://doi.org/10.5194/bg-18-2213-2021)
+[[Code](https://github.com/sdtaylor/PhenograssReplication),
+[Data & Code Archive](https://doi.org/10.5281/zenodo.3897319)
+
 Prince, K., Taylor, S., & Angelini, C. 2020. A global, cross-system meta-analysis of polychlorinated biphenyl biomagnification. Environmental Science & Technology. [https://doi.org/10.1021/acs.est.9b07693](https://doi.org/10.1021/acs.est.9b07693)  
 
 Taylor, S.D., Marconi, S. 2020. Rethinking global carbon storage potential of trees. A comment on Bastin et al. (2019). Annals of Forest Science 77, 23. [https://doi.org/10.1007/s13595-020-0922-z](https://doi.org/10.1007/s13595-020-0922-z)
@@ -40,10 +44,6 @@ White, E.P., G.M. Yenni, S.D. Taylor, E.M. Christensen, E.K. Bledsoe, J.L. Simon
 [Preprint](https://doi.org/10.1101/268623)]
 
 ## Preprints
-
-Taylor, SD and Browning, DM. 2020. Multi-scale assessment of a grassland productivity model. Biogeosciences Discussions. [https://doi.org/10.5194/bg-2020-321](https://doi.org/10.5194/bg-2020-321)  
-[[Code](https://github.com/sdtaylor/PhenograssReplication),
-[Data & Code Archive](https://doi.org/10.5281/zenodo.3897319)]  
 
 Taylor, SD and Guralnick, RP, 2019. Opportunistically collected photographs can be used to estimate large-scale phenological trends. bioRxiv, 794396. [https://doi.org/10.1101/794396](https://doi.org/10.1101/794396)
 [[Data & Code Archive](https://doi.org/10.5281/zenodo.3473015)]  
