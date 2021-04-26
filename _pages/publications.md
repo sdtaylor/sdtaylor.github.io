@@ -12,7 +12,7 @@ You can also find everything on my [Google Scholar profile](https://scholar.goog
 
 Taylor, Shawn D., and Dawn M. Browning. 2021. Multi-Scale Assessment of a Grassland Productivity Model. Biogeosciences 18 (6): 2213–20. [https://doi.org/10.5194/bg-18-2213-2021](https://doi.org/10.5194/bg-18-2213-2021)
 [[Code](https://github.com/sdtaylor/PhenograssReplication),
-[Data & Code Archive](https://doi.org/10.5281/zenodo.3897319)
+[Data & Code Archive](https://doi.org/10.5281/zenodo.3897319)]
 
 Prince, K., Taylor, S., & Angelini, C. 2020. A global, cross-system meta-analysis of polychlorinated biphenyl biomagnification. Environmental Science & Technology. [https://doi.org/10.1021/acs.est.9b07693](https://doi.org/10.1021/acs.est.9b07693)  
 
@@ -38,12 +38,16 @@ Harris, D.J., S.D. Taylor, E.P. White. 2018. Forecasting biodiversity in breedin
 [Code Archive](https://doi.org/10.5281/zenodo.888988),
 [Preprint](https://doi.org/10.1101/191130)]
 
-White, E.P., G.M. Yenni, S.D. Taylor, E.M. Christensen, E.K. Bledsoe, J.L. Simonis, S.K.M. Ernest. In press. Developing an automated iterative near-term forecasting system for an ecological study. Methods in Ecology and Evolution [https://doi.org/10.1111/2041-210X.13104](https://doi.org/10.1111/2041-210X.13104) [[Website](https://portal.naturecast.org/),
+White, E.P., G.M. Yenni, S.D. Taylor, E.M. Christensen, E.K. Bledsoe, J.L. Simonis, S.K.M. Ernest. 2018. Developing an automated iterative near-term forecasting system for an ecological study. Methods in Ecology and Evolution [https://doi.org/10.1111/2041-210X.13104](https://doi.org/10.1111/2041-210X.13104) [[Website](https://portal.naturecast.org/),
 [Data](https://github.com/weecology/PortalData),
 [Code](https://github.com/weecology/portalPredictions),
-[Preprint](https://doi.org/10.1101/268623)]
+[Preprint](https://doi.org/10.1101/268623)]  
 
 ## Preprints
+
+Taylor, SD and White, EP, 2020. Influence of climate forecasts, data assimilation, and uncertainty propagation on the performance of near-term phenology forecasts. bioRxiv, [https://doi.org/10.1101/2020.08.18.256057](https://doi.org/10.1101/2020.08.18.256057)  
+[[Code](https://github.com/sdtaylor/phenology_forecasts),
+[Data & Code Archive](https://doi.org/10.5281/zenodo.3990010)]    
 
 Taylor, SD and Guralnick, RP, 2019. Opportunistically collected photographs can be used to estimate large-scale phenological trends. bioRxiv, 794396. [https://doi.org/10.1101/794396](https://doi.org/10.1101/794396)
 [[Data & Code Archive](https://doi.org/10.5281/zenodo.3473015)]  
