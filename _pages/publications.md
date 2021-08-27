@@ -14,6 +14,8 @@ Taylor, S.D., Browning, D.M., Baca, R.A., Gao, F. *Accepted - In Press*. Constra
 [Code](https://github.com/sdtaylor/JornadaDroneAnalysis),
 [Data & Code Archive](https://doi.org/10.5281/zenodo.4777207)]  
 
+Browning, D. M., Russell, E. S., Ponce-Campos, G. E., Kaplan, N., Richardson, A. D., Seyednasrollah, B., … Taylor, S. D. 2021. Monitoring agroecosystem productivity and phenology at a national scale: A metric assessment framework. Ecological Indicators, 131, 108147. [https://doi.org/10.1016/j.ecolind.2021.108147](https://doi.org/10.1016/j.ecolind.2021.108147)  
+
 Taylor, Shawn D., and Dawn M. Browning. 2021. Multi-Scale Assessment of a Grassland Productivity Model. Biogeosciences 18 (6): 2213–20. [https://doi.org/10.5194/bg-18-2213-2021](https://doi.org/10.5194/bg-18-2213-2021)
 [[Code](https://github.com/sdtaylor/PhenograssReplication),
 [Data & Code Archive](https://doi.org/10.5281/zenodo.3897319)]
