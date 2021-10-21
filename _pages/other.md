@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "Other things of note"
 permalink: /other/
 author_profile: true
@@ -22,3 +21,4 @@ Made with a combination of QGIS and R for the publication [Taylor et al. 2021](h
 Made 100% in R for the publication [Taylor & White 2020](https://doi.org/10.1002/eap.2025). 
 
 <img src="/images/taylor_white_2020_map.jpg" width="50%" title="Phenology Forecasts">
+
