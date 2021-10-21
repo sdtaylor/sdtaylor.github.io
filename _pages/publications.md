@@ -51,6 +51,9 @@ White, E.P., G.M. Yenni, S.D. Taylor, E.M. Christensen, E.K. Bledsoe, J.L. Simon
 
 ## Preprints
 
+Taylor, SD and Browning, DM, 2021. Deep learning models for identifying crop and field attributes from near surface cameras. bioRxiv. [https://doi.org/10.1101/2021.10.20.465168](https://www.biorxiv.org/content/10.1101/2021.10.20.465168)
+[[Data & Code Archive](https://doi.org/10.5281/zenodo.5579797)]   
+
 Taylor, SD and White, EP, 2020. Influence of climate forecasts, data assimilation, and uncertainty propagation on the performance of near-term phenology forecasts. bioRxiv, [https://doi.org/10.1101/2020.08.18.256057](https://doi.org/10.1101/2020.08.18.256057)  
 [[Code](https://github.com/sdtaylor/phenology_forecasts),
 [Data & Code Archive](https://doi.org/10.5281/zenodo.3990010)]    
