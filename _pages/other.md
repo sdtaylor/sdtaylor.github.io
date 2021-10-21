@@ -11,7 +11,7 @@ author_profile: true
 ### Rabbits of North America
 Made using QGIS and data from [IUCN Red List](https://www.iucnredlist.org).
 
-![Range map of North American Rabbits](/images/rabbit_map.jpeg =250x250)
+<img src="/images/rabbit_map.jpeg" width="30%" title="Rabbit Map">
 
 ### Vegetation Cover in drylands
 Made with a combination of QGIS and R for the publication [Taylor et al. 2021](https://doi.org/10.1101/2021.05.21.445173).
