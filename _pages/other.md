@@ -4,7 +4,6 @@ permalink: /other/
 author_profile: true
 ---
 
-
 ## Maps
 
 ### Rabbits of North America
@@ -22,3 +21,8 @@ Made 100% in R for the publication [Taylor & White 2020](https://doi.org/10.1002
 
 <img src="/images/taylor_white_2020_map.jpg" width="50%" title="Phenology Forecasts">
 
+## Tutorials
+
+[So you want to run your R or python script on the HiperGator](https://www.weecology.org/lab-wiki/hipergator-intro-guide/) - A non-technical introduction to using high performance clusters.   
+
+[Complex figure examples](https://github.com/sdtaylor/complex_figure_examples) - A gallery of scientific figures and the code to make them. 
