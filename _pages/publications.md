@@ -10,7 +10,7 @@ You can also find everything on my [Google Scholar profile](https://scholar.goog
 
 ## Publications  
 
-Taylor, S.D., Browning, D.M., Baca, R.A., Gao, F. *Accepted - In Press*. Constraints and Opportunities for Detecting Land Surface Phenology in Drylands. Journal of Remote Sensing. [[Preprint](https://doi.org/10.1101/2021.05.21.445173),
+Taylor, S.D., Browning, D.M., Baca, R.A., Gao, F. 2021. Constraints and Opportunities for Detecting Land Surface Phenology in Drylands. Journal of Remote Sensing. [https://doi.org/10.34133/2021/9859103](https://doi.org/10.34133/2021/9859103). [[Preprint](https://doi.org/10.1101/2021.05.21.445173),
 [Code](https://github.com/sdtaylor/JornadaDroneAnalysis),
 [Data & Code Archive](https://doi.org/10.5281/zenodo.4777207)]  
 
