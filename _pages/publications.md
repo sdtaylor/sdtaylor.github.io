@@ -9,6 +9,10 @@ You can also find everything on my [Google Scholar profile](https://scholar.goog
 
 ## Publications  
 
+Taylor S.D., Browning D.M. 2022. Classification of Daily Crop Phenology in PhenoCams Using Deep Learning and Hidden Markov Models. Remote Sensing. 14(2):286. [https://doi.org/10.3390/rs14020286](https://doi.org/10.3390/rs14020286) [[Preprint](https://doi.org/10.1101/2021.10.20.465168),
+[Code](https://github.com/sdtaylor/PhenocamCNN2),
+[Data & Code Archive](https://doi.org/10.5281/zenodo.5579796)]  
+
 Taylor, S.D., Browning, D.M., Baca, R.A., Gao, F. 2021. Constraints and Opportunities for Detecting Land Surface Phenology in Drylands. Journal of Remote Sensing. [https://doi.org/10.34133/2021/9859103](https://doi.org/10.34133/2021/9859103). [[Preprint](https://doi.org/10.1101/2021.05.21.445173),
 [Code](https://github.com/sdtaylor/JornadaDroneAnalysis),
 [Data & Code Archive](https://doi.org/10.5281/zenodo.4777207)]  
@@ -49,9 +53,6 @@ White, E.P., G.M. Yenni, S.D. Taylor, E.M. Christensen, E.K. Bledsoe, J.L. Simon
 [Preprint](https://doi.org/10.1101/268623)]  
 
 ## Preprints
-
-Taylor, SD and Browning, DM, 2021. Deep learning models for identifying crop and field attributes from near surface cameras. bioRxiv. [https://doi.org/10.1101/2021.10.20.465168](https://www.biorxiv.org/content/10.1101/2021.10.20.465168)
-[[Data & Code Archive](https://doi.org/10.5281/zenodo.5579797)]   
 
 Taylor, SD and White, EP, 2020. Influence of climate forecasts, data assimilation, and uncertainty propagation on the performance of near-term phenology forecasts. bioRxiv, [https://doi.org/10.1101/2020.08.18.256057](https://doi.org/10.1101/2020.08.18.256057)  
 [[Code](https://github.com/sdtaylor/phenology_forecasts),
